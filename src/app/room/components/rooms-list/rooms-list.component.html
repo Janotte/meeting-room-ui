@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row d-flex justify-content-end">
+        <button class="btn btn-primary m-2" (click)="navigateToRoom()">Nova Sala</button>
+    </div>
+    <div class="row">
+        <table class="table table-fluid table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Início</th>
+                    <th>Término</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let room of rooms | async">
+                    <td>{{ room.name }}</td>
+                    <td>{{ room.date | date: 'dd-MM-yyyy' }}</td>
+                    <td>{{ room.startHour }}</td>
+                    <td>{{ room.endHour }}</td>
+                    <td>
+                        <button class="btn btn-danger ml-1" (click)="deleteRoom(room.id)">Excluir</button>
+                        <button class="btn btn-info ml-1" (click)="updateRoom(room.id)">Editar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

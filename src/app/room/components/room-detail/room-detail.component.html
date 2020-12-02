@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>{{ editing ? 'Edição de ' : 'Nova' }} Sala</h3>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end" *ngIf="editing">
+            <button class="btn btn-primary m-2" (click)="newRoom(f)">Nova Sala</button>
+        </div>
+    </div>
+    <div [hidden]="submitted">
+        <form #f="ngForm" autocomplete="off" (ngSubmit)="onSubmit(f)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="room.name" name="name"
+                    placeholder="Nome da Sala" #name="ngModel" required>
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                    <div *ngIf="name.errors.required">
+                        O nome é necessário.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Date</label>
+                <input type="date" class="form-control" id="date" [(ngModel)]="room.date" name="date" #date="ngModel"
+                    required>
+                <div *ngIf="date.invalid && (date.dirty || date.touched)" class="alert alert-danger">
+                    <div *ngIf="date.errors.required">
+                        A data é necessária.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Start Hour</label>
+                <input type="time" class="form-control" id="startHour" [(ngModel)]="room.startHour" name="startHour" #startHour="ngModel"
+                    required>
+                <div *ngIf="startHour.invalid && (startHour.dirty || startHour.touched)" class="alert alert-danger">
+                    <div *ngIf="startHour.errors.required">
+                        O horário de início é necessário.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">End Hour</label>
+                <input type="time" class="form-control" id="endHour" [(ngModel)]="room.endHour" name="endHour" #endHour="ngModel" required>
+                <div *ngIf="endHour.invalid && (endHour.dirty || endHour.touched)" class="alert alert-danger">
+                    <div *ngIf="endHour.errors.required">
+                        O horário de término é necessário.
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary ml-1" (click)="save(f)" [disabled]="f.invalid">Salvar</button>
+        <button class="btn btn-secondary ml-1" (click)="cancel()">Voltar</button>
+    </div>
+</div>
