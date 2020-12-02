@@ -1,6 +1,6 @@
 # Meeting Room UI - Angular Project 
 
-[Sobre](https://github.com/Janotte/dio-personapi#-sobre)  |  [Tecnologias](https://github.com/Janotte/dio-personapi#-tecnologias)  |  [Ferramentas](https://github.com/Janotte/dio-personapi#-ferramentas)  |  [Baixar](https://github.com/Janotte/dio-personapi#-baixar)
+[Sobre](https://github.com/Janotte/meeting-room-ui#-sobre)  |  [Tecnologias](https://github.com/Janotte/meeting-room-ui#-tecnologias)  |  [Ferramentas](https://github.com/Janotte/meeting-room-ui#-ferramentas)  |  [Baixar](https://github.com/Janotte/meeting-room-ui#-baixar)
 
 ------
 
@@ -69,10 +69,10 @@ Neste projeto foi desenvolvido e utilizadas as seguintes tecnologias:
 
 ```
 # Clonar projeto
-$ git clone https://github.com/Janotte/meeting-room-api
+$ git clone https://github.com/Janotte/meeting-room-ui
 
 # Entrar no projeto
-$ cd meeting-room-api
+$ cd meeting-room-ui
 ```
 
 ------
