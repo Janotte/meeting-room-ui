@@ -77,4 +77,4 @@ $ cd meeting-room-api
 
 ------
 
-### Desenvolvido por Sandro André Janotte [![Linkedin](https://camo.githubusercontent.com/9547b3f12a30957bbb1e919540c24e2cae5844320b916f95af4d7de0080470d1/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f675645306a2e706e67) LinkedIn](https://www.linkedin.com/in/sandro-andré-janotte-2b022450/)  [![GitHub](https://camo.githubusercontent.com/4ca1de15ed694744b0f8bc51394e56748025f8c87535df88601aaf1ce4b0109b/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f74736b4d682e706e67) GitHub](
+### Desenvolvido por Sandro André Janotte [![Linkedin](https://camo.githubusercontent.com/9547b3f12a30957bbb1e919540c24e2cae5844320b916f95af4d7de0080470d1/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f675645306a2e706e67) LinkedIn](https://www.linkedin.com/in/sandro-andré-janotte-2b022450/)  [![GitHub](https://camo.githubusercontent.com/4ca1de15ed694744b0f8bc51394e56748025f8c87535df88601aaf1ce4b0109b/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f74736b4d682e706e67) GitHub](https://github.com/janotte)
